@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포지션 웹요소의 위치 지정하기</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .box{
+            position: absolute;
+            top: 100px;
+            right: 0;
+            width:200px;
+            height: 200px;
+            background-color: aquamarine;
+        }
+        .contents{
+            position: relative;
+            width: 500px;
+            height: 400px;
+            background-color: antiquewhite;
+        }
+        .gotop{
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            width: 100px;
+            /* height: 100px; */
+            border-radius: 50%;
+            line-height: 100px;
+            text-align: center;
+            background-color: aqua;
+        }
+        .header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            line-height: 100px;
+            background-color: aquamarine;
+            z-index: 9999;
+        }
+        .wrap{
+            width: 100px;
+            line-height: 100px;
+            background-color: blue;
+            text-align: center;
+        }
+        .wrap p{
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="header">상단</div>
+    <div class="box"></div>
+    <h1>김주형</h1>
+    <h1>김주형</h1>
+    <h1>김주형</h1>
+    <h1>김주형</h1>
+    <h1>김주형</h1>
+    <div class="contents">
+        영역
+        <div class="box"></div>
+    </div>
+    <div class="gotop">
+        위로가기↑
+    </div>
+    <div class="wrap">
+        <p>new</p>
+    </div>
+</body>
+</html>
