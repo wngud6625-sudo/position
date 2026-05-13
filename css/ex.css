@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Intel+One+Mono:wght@300..700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f5f6fa;
+    font-family: "Intel One Mono", monospace;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ff4d4d;
+}
+
+
+.contents {
+    width: 1000px;
+    margin: 60px auto;
+}
+
+.contents > h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.card-list {
+    display: flex;
+    gap: 20px;
+}
+
+/* 카드 */
+.card {
+    width: 320px;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* 이미지 */
+.card img {
+    width: 100%;
+    display: block;
+}
+
+/* NEW 배지 */
+.badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #ff4d4d;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.badge:hover{
+background-color: #bd3f3f;
+}
+
+/* 내용 */
+.content {
+    padding: 18px;
+}
+
+.content h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.content p {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* 버튼 */
+.content button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #111;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.content button:hover {
+    background: #ff4d4d;
+}
+
+.musical-wrap {
+    width: 1200px;
+    margin: 80px auto;
+}
+
+.musical-wrap > h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.musical-wrap .card-list {
+    display: flex;
+    gap: 20px;
+}
+
+.musical-card {
+    width: 25%;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.musical-card:hover {
+    transform: translateY(-6px);
+}
+

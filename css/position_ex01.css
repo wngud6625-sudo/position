@@ -1,11 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Orbitron:wght@400..900&family=Playwrite+DE+SAS:wght@100..400&display=swap");
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-a{
+a {
     color: #333;
-    text-decoration: none
+    text-decoration: none;
+}
+html{
+   scroll-behavior: smooth;
+}
+main {
+    padding-top: 100px;
+}
+.header {
+    background-color: antiquewhite;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    z-index: 1000;
+}
+.header-inner {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cf3d3d;
+}
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "Intel One Mono", monospace;
+}
+/* 메뉴 */
+nav {
+    display: flex;
+    gap: 30px;
+}
+nav a {
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    color: #fff;
+    cursor: pointer;
 }
 /* 영상 갤러리 */
 .contents {
@@ -66,36 +109,47 @@ a{
     background-color: #cf3d3d;
 }
 /* 뮤지컬 영역 */
-.musical-wrap{
+.musical-wrap {
     width: 1200px;
-    display: flex;
-    gap: 20px;
+    /* display: flex;
+    gap: 20px; */
     margin: 50px auto;
     /* background-color: #f7e8ba; */
 }
-.musical-card{
+.musical-wrap > h2 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.musical-wrap .card-list {
+    display: flex;
+    gap: 20px;
+}
+
+.musical-card {
     width: calc(100% / 4);
     background-color: #fff;
-    box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
-.ticket-img img{
+
+.ticket-img img {
     width: 100%;
     display: block;
 }
 /* 이미지위에 랭킹 */
-.ticket-img{
+.ticket-img {
     height: 380px;
     position: relative;
 }
-.img-bg{
+.img-bg {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 380px;
-    background: linear-gradient(180deg, transparent 70%, rgba(0,0,0,0.3));
+    background: linear-gradient(180deg, transparent 70%, rgba(0, 0, 0, 0.3));
 }
-.ticket-rank{
+.ticket-rank {
     position: absolute;
     bottom: 0;
     left: 20px;
@@ -103,13 +157,13 @@ a{
     font-size: 70px;
     font-weight: bold;
 }
-.ticket-info{
+.ticket-info {
     padding: 10px;
 }
-.ticket-info h3{
+.ticket-info h3 {
     margin-bottom: 15px;
 }
-.ticket-sale{
+.ticket-sale {
     padding: 4px 8px;
     border-radius: 3px;
     font-size: 11px;
@@ -117,23 +171,22 @@ a{
     margin-top: 15px;
     display: inline-block;
 }
-.video-wrap{
+.video-wrap {
     width: 1200px;
     display: flex;
     gap: 20px;
     margin: 50px auto;
 }
-.video-card{
+.video-card {
     width: calc(100% / 4);
     background-color: #fff;
-    box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
-.video-card img{
+.video-card img {
     width: 100%;
     display: block;
-    
 }
-.card-rank{
+.card-rank {
     position: absolute;
     bottom: 0;
     left: 20px;
@@ -141,15 +194,66 @@ a{
     font-size: 70px;
     font-weight: bold;
 }
-.card-img{
-    height: 540px;
+.card-img {
+    /* height: 540px; */
     position: relative;
 }
-.img-bg1{
+.img-bg1 {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 540px;
-    background: linear-gradient(180deg, transparent 70%, rgba(0,0,0,0.3));
+    background: linear-gradient(180deg, transparent 70%, rgba(0, 0, 0, 0.3));
+}
+/* sticky 영역 */
+.sticky-wrap {
+    width: 1200px;
+    background-color: #ceb6b6;
+    margin: auto;
+}
+.sticky-wrap h2 {
+    text-align: center;
+}
+.sticky-container {
+    display: flex;
+    background-color: #ffffff;
+}
+.sticky-left {
+    width: 70%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sticky-right {
+    width: 30%;
+    padding: 20px;
+    background-color: rgb(154, 241, 241);
+}
+.sticky-card {
+    pad: 20px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    background-color: #fff;
+}
+.sticky-box {
+    position: sticky;
+    top: 130px;
+    background-color: #fff;
+}
+.sticky-card {
+    display: flex;
+    gap: 30px;
+}
+
+.sticky-card img {
+    width: 100px;
+}
+footer {
+    width: 100%;
+    color: #fff;
+    padding: 30px;
+    background-color: #333;
+    text-align: center;
 }
